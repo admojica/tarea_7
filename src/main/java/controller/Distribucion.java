@@ -6,7 +6,6 @@
 */
 package controller;
 
-import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.Locale;
 

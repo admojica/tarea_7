@@ -20,6 +20,7 @@ public class CalculoVariableP
     /**
      * Método que inicializa los objetos de la clase distribucion
      * @param x
+     * @param dof
      * @return El resultado de la distribucion simpson
      * @since incluido desde la version 1.0
     */
@@ -34,7 +35,8 @@ public class CalculoVariableP
      * Método para validar el resultado y recalcular el valor de x hasta
      * obtener el valor correcto de p
      * @param p
-     * @return 
+     * @param dof_calculo
+     * @return inicio
      * @since incluido desde la version 1.0
     */
     public BigDecimal validarResultado(BigDecimal p, BigDecimal dof_calculo)
@@ -117,6 +119,8 @@ public class CalculoVariableP
     
     /**
      * Método que retorna el resultado obtenido a través de esta clase
+     * @param a
+     * @param b
      * @return una variable tipo double
      * @since incluido desde la version 1.0
     */

@@ -99,6 +99,7 @@ public class Reporte
     
     /**
      * Método que devuelve el reporte en forma de tabla html
+     * @return reporte
      * @since incluido desde la version 1.0
     */
     public String getReporte()
