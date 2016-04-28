@@ -14,9 +14,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 
+/**
+ * @author David Mojica
+ * @version 1.0 26 de Febrero de 2016
+ */
 public class AbrirDatos 
 {    
-    // Metodo que lee el archivo .txt y llena una lista
+    /**
+     * Método que llena una lista a partir de una ruta en el computador
+     * @param ruta
+     * @return lista 
+     * @since incluido desde la version 1.0
+    */
     public LinkedList llenarLista(String ruta)
     {
         LinkedList lista = new LinkedList();

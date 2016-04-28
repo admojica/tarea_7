@@ -9,6 +9,10 @@ package controller;
 import java.text.DecimalFormat;
 import java.util.LinkedList;
 
+/**
+ * @author David Mojica
+ * @version 1.0 28 de Febrero de 2016
+ */
 public final class Desviacion 
 {
     double promedio_x;
@@ -20,7 +24,13 @@ public final class Desviacion
     double beta_0;
     double Yk;    
     
-    // Metodo  para obtener la desviacion estandar a partir de unas listas y el estimado de LOC
+    /**
+     * Método para obtener la desviacion estandar a partir de unas listas y el estimado de LOC
+     * @param lista_a
+     * @param lista_b
+     * @param estimated_LOC
+     * @since incluido desde la version 1.0
+    */
     public void obtenerDesviacion(LinkedList lista_a, LinkedList lista_b, Double estimated_LOC)
     {
         Double tamano_lista = (double) lista_a.size();
@@ -64,42 +74,82 @@ public final class Desviacion
         
     }
     
-    //
+    /**
+     * Método que retorna la variable rxy
+     * @return rxy
+     * @since incluido desde la version 1.0
+    */
     public double getRxy()
     {
         return rxy;
     }
     
+    /**
+     * Método que retorna la variable r_cuadrado
+     * @return r_cuadrado
+     * @since incluido desde la version 1.0
+    */
     public double getR2()
     {
         return r_cuadrado;
     }
     
+    /**
+     * Método que retorna la variable beta_0
+     * @return beta_0
+     * @since incluido desde la version 1.0
+    */
     public double getBeta0()
     {
         return beta_0;
     }
     
+    /**
+     * Método que retorna la variable beta_1
+     * @return beta_1
+     * @since incluido desde la version 1.0
+    */
     public double getBeta1()
     {
         return beta_1;
     }
     
+    /**
+     * Método que retorna la variable Yk
+     * @return Yk
+     * @since incluido desde la version 1.0
+    */
     public double getYk()
     {
         return Yk;
     }
     
+    /**
+     * Método que retorna la variable promedio_X
+     * @return promedio_x
+     * @since incluido desde la version 1.0
+    */
     public double getPromedioX()
     {
         return promedio_x;
     }
     
+    /**
+     * Método que retorna la variable promedio_y
+     * @return promedio_y
+     * @since incluido desde la version 1.0
+    */
     public double getPromedioY()
     {
         return promedio_y;
     }
     
+    /**
+     * Método para hallar el promedio de una lista
+     * @param lista_promedio
+     * @return promedio
+     * @since incluido desde la version 1.0
+    */
     public double getPromedio(LinkedList lista_promedio)
     {
         double promedio = 0.0;
@@ -111,7 +161,12 @@ public final class Desviacion
         return promedio;
     }
     
-    // Metodo para obtener la potencia al cuadrado
+    /**
+     * Método que el cuadrado de los números de una lista
+     * @param lista
+     * @return lista_cuadrado
+     * @since incluido desde la version 1.0
+    */
     public LinkedList potenciaCuadrado(LinkedList lista)
     {
         LinkedList lista_cuadrado = new LinkedList();
@@ -122,7 +177,13 @@ public final class Desviacion
         return lista_cuadrado;
     }
     
-    // Metodo para obtener la multiplicación de los dos factores de la desviación estándar
+    /**
+     * Método para obtener la multiplicación de los dos factores de la desviación estándar
+     * @param lista_a
+     * @param lista_b
+     * @return lista_multiplicada
+     * @since incluido desde la version 1.0
+    */
     public LinkedList multiplicacion(LinkedList lista_a, LinkedList lista_b)
     {
         LinkedList lista_multiplicada = new LinkedList();
@@ -133,7 +194,12 @@ public final class Desviacion
         return lista_multiplicada;
     }
     
-    // Metodo para sumar la lista
+    /**
+     * Método para sumar la lista
+     * @param lista
+     * @return suma
+     * @since incluido desde la version 1.0
+    */
     public Double sumatoria(LinkedList lista)
     {
         Double suma = 0.0;
@@ -142,6 +208,5 @@ public final class Desviacion
             suma += (Double) lista.get(i);
         }
         return suma;
-    }
-    
+    }    
 }

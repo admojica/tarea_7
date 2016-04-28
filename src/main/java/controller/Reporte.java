@@ -12,6 +12,10 @@ import model.AbrirDatos;
 public class Reporte 
 {
     String reporte;
+    /**
+    * Constructor de clase
+    * @since incluido desde la version 1.0
+    */
     public Reporte()
     {
         AbrirDatos abrir_datos = new AbrirDatos();
